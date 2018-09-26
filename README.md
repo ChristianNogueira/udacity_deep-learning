@@ -11,6 +11,12 @@ In the program itself, the projects are reviewed by Udacity experts, but they ar
 
 ## Table Of Contents
 
+### Tasks Completed
+
+* [gradient-descent](https://github.com/ChristianNogueira/udacity_deep-learning/tree/master/gradient-descent)
+* [student-admissions](https://github.com/ChristianNogueira/udacity_deep-learning/tree/master/student-admissions)
+
+
 ### Tutorials
 
 * [Sentiment Analysis with Numpy](https://github.com/ChristianNogueira/udacity_deep-learning/tree/master/sentiment-network): [Andrew Trask](http://iamtrask.github.io/) leads you through building a sentiment analysis model, predicting if some text is positive or negative.
