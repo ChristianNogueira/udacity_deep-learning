@@ -3,8 +3,7 @@
 This repository is a fork of [Udacity Deep-learning @github](https://github.com/udacity/deep-learning)
 
 It contains the progress of my
-[Deep Learning Nanodegree Foundation](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101) program, 
-which consists of a bunch of tutorial notebooks for various deep learning topics. 
+[Deep Learning Nanodegree Foundation](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101) program. 
 
 ## Table Of Contents
 
