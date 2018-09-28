@@ -19,11 +19,15 @@ class NeuralNetwork(object):
 
         # Set self.activation_function to your implemented sigmoid function #
         self.activation_function_options = {'sigmoid': lambda x: 1 / (1 + np.exp(-x)),
-                                            'relu': lambda x: max(x, 0),
-                                            'htan': lambda x: np.tanh(x)}
+                                            'relu': lambda x: max(x, 0)}
+
+        self.gradient_function_options = {'sigmoid': lambda x: x * (1 - x),
+                                          'relu': lambda x: 0 if x <= 0 else 1}
 
         # choose activation function
-        self.activation_function = self.activation_function_options['sigmoid']
+        self._option = 'sigmoid'
+        self.activation_function = self.activation_function_options[self._option]
+        self.gradient_function = self.gradient_function_options[self._option]
 
     def train(self, features, targets):
         """ Train the network on batch of features and targets.
@@ -60,7 +64,7 @@ class NeuralNetwork(object):
 
         # Output layer
         final_inputs = np.dot(hidden_outputs, self.weights_hidden_to_output)
-        final_outputs = self.activation_function(final_inputs)
+        final_outputs = final_inputs
 
         return final_outputs, hidden_outputs
 
@@ -77,14 +81,16 @@ class NeuralNetwork(object):
         """
         # Output layer error is the difference between desired target and actual output.
         error = y - final_outputs
-        output_error_term = error * final_outputs * (1 - final_outputs)
+        output_error_term = error
 
         # Calculate the hidden layer's contribution to the error
-        hidden_error = np.dot(self.weights_hidden_to_output, output_error_term)
-        hidden_error_term = hidden_error * hidden_outputs * (1 - hidden_outputs)
+        hidden_error = self.weights_hidden_to_output * output_error_term
+
+        hidden_gradient_value = self.gradient_function(hidden_outputs)
+        hidden_error_term = hidden_error * hidden_gradient_value[:, None]
 
         # Weight step (input to hidden)
-        delta_weights_i_h += hidden_error_term * X[:, None]
+        delta_weights_i_h += (hidden_error_term * X).T
         # Weight step (hidden to output)
         delta_weights_h_o += output_error_term * hidden_outputs[:, None]
         return delta_weights_i_h, delta_weights_h_o
@@ -122,7 +128,7 @@ class NeuralNetwork(object):
 # -----------------------------
 # Set your hyperparameters here
 # -----------------------------
-iterations = 1000
+iterations = 20000
 learning_rate = 0.1
-hidden_nodes = 20
+hidden_nodes = 30
 output_nodes = 1
