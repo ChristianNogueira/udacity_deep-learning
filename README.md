@@ -9,9 +9,12 @@ It contains the progress of my
 
 ### Tasks Completed
 
+* First Project: [first-neural-network](https://github.com/ChristianNogueira/udacity_deep-learning/tree/master/first-neural-network)
+, predicting Bike Sharing Data
 * [gradient-descent](https://github.com/ChristianNogueira/udacity_deep-learning/tree/master/gradient-descent)
 * [student-admissions](https://github.com/ChristianNogueira/udacity_deep-learning/tree/master/student-admissions)
 * [quiz](https://github.com/ChristianNogueira/udacity_deep-learning/tree/master/quiz_codes)
+
 
 ## Dependencies
 
