@@ -13,6 +13,7 @@ It contains the progress of my
 , predicting Bike Sharing Data
 * [gradient-descent](https://github.com/ChristianNogueira/udacity_deep-learning/tree/master/gradient-descent)
 * [student-admissions](https://github.com/ChristianNogueira/udacity_deep-learning/tree/master/student-admissions)
+* [student-admissions-keras](https://github.com/ChristianNogueira/udacity_deep-learning/tree/master/student-admissions-keras)
 * [quiz](https://github.com/ChristianNogueira/udacity_deep-learning/tree/master/quiz_codes)
 * [Sentiment-Analysis](https://github.com/ChristianNogueira/udacity_deep-learning/tree/master/sentiment-network)
 
