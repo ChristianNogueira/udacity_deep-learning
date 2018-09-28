@@ -14,6 +14,7 @@ It contains the progress of my
 * [gradient-descent](https://github.com/ChristianNogueira/udacity_deep-learning/tree/master/gradient-descent)
 * [student-admissions](https://github.com/ChristianNogueira/udacity_deep-learning/tree/master/student-admissions)
 * [quiz](https://github.com/ChristianNogueira/udacity_deep-learning/tree/master/quiz_codes)
+* [Sentiment-Analysis](https://github.com/ChristianNogueira/udacity_deep-learning/tree/master/sentiment-network)
 
 
 ## Dependencies
