@@ -11,6 +11,8 @@ It contains the progress of my
 
 * First Project: [first-neural-network](https://github.com/ChristianNogueira/udacity_deep-learning/tree/master/first-neural-network)
 , predicting Bike Sharing Data
+* [IMDB-keras](https://github.com/ChristianNogueira/udacity_deep-learning/blob/master/IMDB-keras/IMDB_In_Keras.ipynb)
+* [weight-inicialization](https://github.com/ChristianNogueira/udacity_deep-learning/blob/master/weight-initialization/weight_initialization.ipynb)
 * [gradient-descent](https://github.com/ChristianNogueira/udacity_deep-learning/tree/master/gradient-descent)
 * [student-admissions](https://github.com/ChristianNogueira/udacity_deep-learning/tree/master/student-admissions)
 * [student-admissions-keras](https://github.com/ChristianNogueira/udacity_deep-learning/tree/master/student-admissions-keras)
